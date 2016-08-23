@@ -14,7 +14,7 @@
  * ```npm install```
 
 ### Usage
-1. ```npm start``` or ```npm run dev```
+1. ```npm start```
 2. Open browser at [localhost](http://localhost:8081)
 
 ### Scripts
