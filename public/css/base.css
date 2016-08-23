@@ -1,0 +1,36 @@
+body {
+  background: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  padding: 30px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+h1 {
+  border-bottom: 1px solid #ddd;
+  font-size: 2.5em;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li[data-done="true"] .text {
+  text-decoration: line-through;
+}
+
+label.delete {
+  cursor: pointer;
+}
+
+label.delete:hover {
+  background-color: orangered;
+}

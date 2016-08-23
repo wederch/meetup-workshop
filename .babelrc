@@ -1,0 +1,30 @@
+{
+  "presets": [
+    "es2015",
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "add-module-exports"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "es2015",
+        "stage-0",
+        "react",
+        "airbnb"
+      ],
+      "plugins": [
+        [
+          "istanbul",
+          {
+            "exclude": [
+              "test/**/*.js"
+            ]
+          }
+        ]
+      ]
+    }
+  }
+}

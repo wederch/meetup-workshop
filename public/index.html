@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TodoMVC</title>
+  <link rel="stylesheet" href="css/base.css"/>
+  <script type="text/javascript" src="scripts/app.js"></script>
+</head>
+<body>
+<div id="content"></div>
+<script type="text/javascript">
+  TodoApp.init('content', {
+    url: 'http://localhost:8081/api/todos/',
+    pollInterval: 2000
+  });
+</script>
+</body>
+</html>
