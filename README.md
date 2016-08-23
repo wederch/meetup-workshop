@@ -20,3 +20,10 @@
 ### Scripts
 Command | Purpose
 ---|---
+npm run build:js | build the app.js file
+npm start | start the app
+npm test | run tests
+npm run test:watch | run tests continuously (on save)
+npm run dev | run the app in watch mode (reloads server and updates app.js on change)
+npm run watch:js | rebuild app.js on change
+npm run watch:server | reload server on change
