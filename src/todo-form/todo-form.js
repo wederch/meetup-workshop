@@ -20,11 +20,12 @@ export default class TodoForm extends React.Component {
       this.setState({text: '', valid: true});
     } else {
       /* Update State */
+      this.setState({text: text, valid: false})
     }
 
     function validateInput(input) {
       /* Add code for input validation*/
-      return true;
+      return /^[A-Z][^0-9]*$/.test(input);
     }
   };
 
