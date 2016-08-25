@@ -5,6 +5,14 @@ module.exports = function (config) {
     autoWatch: false,
     browsers: ['PhantomJS'],
     colors: true,
+    coverageReporter: {
+      includeAllSources: true,
+      dir: 'build/reports/coverage',
+      reporters: [
+        {type: 'text'},
+        {type: 'cobertura'}
+      ]
+    },
     files: [
       'test/context.js'
     ],
@@ -20,7 +28,7 @@ module.exports = function (config) {
     preprocessors: {
       'test/context.js': ['webpack', 'sourcemap']
     },
-    reporters: ['progress', 'dots', 'junit'],
+    reporters: ['progress', 'dots', 'junit', 'coverage'],
     singleRun: true,
     webpack: {
       devtool: 'inline-source-map',
