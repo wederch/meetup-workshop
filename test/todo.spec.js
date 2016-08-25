@@ -1,6 +1,6 @@
 import React from "react";
 import {shallow, mount} from "enzyme";
-import Todo from "../src/todo";
+import Todo from "../src/todo/todo";
 
 describe('<Todo/>', ()=> {
 

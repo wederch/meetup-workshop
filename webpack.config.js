@@ -10,6 +10,7 @@ module.exports = {
     libraryTarget: 'var',
     library: 'TodoApp'
   },
+  devtool: 'inline-source-map',
   module: {
     loaders: [
       {

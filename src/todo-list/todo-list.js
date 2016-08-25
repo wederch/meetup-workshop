@@ -1,5 +1,5 @@
 import React from 'react';
-import Todo from './todo';
+import Todo from '../todo/todo';
 import styles from './todo-list.scss';
 
 export default class TodoList extends React.Component {

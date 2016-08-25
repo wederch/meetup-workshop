@@ -24,8 +24,9 @@ coverage
 build
 
 #generated files
-public/app.js
-public/style.css
+public/*.js
+public/*.css
+public/*.map
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
