@@ -20,10 +20,10 @@
 ### Scripts
 Command | Purpose
 ---|---
-```npm start``` | start the app
-```npm test``` | run tests
-```npm run build:js``` | build the app.js file
-```npm run test:watch``` | run tests continuously (on save)
-```npm run dev``` | run the app in watch mode (reloads server and updates app.js on change)<br> __Open browser at [localhost:8081](http://localhost:8081)!__<br>*Tipp for IntelliJ/ Webstorm users: Disable 'safe write' in settings*
-```npm run watch:js``` | rebuild app.js on change
-```npm run watch:server``` | reload server on change
+```npm start``` | Start the app
+```npm test``` | Run tests
+```npm run build:js``` | Build the app.js file
+```npm run test:watch``` | Run tests continuously (on save)
+```npm run dev``` | Run the app in watch mode (reloads server and updates app.js on change)<br> __Open browser at [localhost:8081](http://localhost:8081)__<br>*Tipp for IntelliJ/ Webstorm users: Disable 'safe write' in settings*
+```npm run watch:js``` | Rebuild app.js on change
+```npm run watch:server``` | Reload server on change
