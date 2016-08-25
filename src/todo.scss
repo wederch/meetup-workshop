@@ -1,0 +1,10 @@
+.delete {
+  cursor: pointer;
+  &:hover{
+    background-color: orangered;
+  }
+}
+
+.text[data-done="true"] {
+  text-decoration: line-through;
+}

@@ -1,5 +1,6 @@
-import React from "react";
-import Todo from "./todo";
+import React from 'react';
+import Todo from './todo';
+import styles from './todo-list.scss';
 
 export default class TodoList extends React.Component {
   render() {
@@ -8,7 +9,7 @@ export default class TodoList extends React.Component {
     });
 
     return (
-      <ul>{todoNodes}</ul>
+      <ul className={styles.list}>{todoNodes}</ul>
     );
   }
 };

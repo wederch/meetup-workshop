@@ -8,7 +8,7 @@ let bodyParser = require('body-parser');
 const TODOS_FILE = path.join(__dirname, 'todos.json');
 
 let app = express();
-app.set('port', (process.env.PORT || 8081));
+app.set('port', (process.env.PORT || 8080));
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -58,7 +58,7 @@ app.post('/api/todos', function (req, res) {
     let newTodo = {
       id: Date.now(),
       done: false,
-      text: req.body.text,
+      text: req.body.text
     };
 
     todos.push(newTodo);
@@ -71,7 +71,6 @@ app.post('/api/todos', function (req, res) {
 
 app.put('/api/todos/:id', function (req, res) {
   readTodos(res, function (todos) {
-    let id = req.params.id;
     let updatedTodo = req.body;
     let index = todos.map(function (t) {
       return t.id

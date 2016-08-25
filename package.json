@@ -5,11 +5,12 @@
   "main": "server/server.js",
   "scripts": {
     "build:js": "webpack",
+    "postinstall" : "npm run build:js",
     "start": "node server/server.js",
     "test": "cross-env NODE_ENV=test karma start",
     "test:watch": "cross-env NODE_ENV=test karma start --autoWatch=true --singleRun=false",
     "dev": "concurrently --kill-others \"npm run watch:js\" \"npm run watch:server\"",
-    "watch:js": "webpack-dev-server --progress --colors",
+    "watch:js": "webpack-dev-server --port=8081 --content-base public/ --progress --colors",
     "watch:server": "nodemon --watch server/server.js"
   },
   "dependencies": {
@@ -25,6 +26,7 @@
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^6.4.0",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -36,10 +38,12 @@
     "chai": "^3.5.0",
     "concurrently": "^2.1.0",
     "cross-env": "^2.0.0",
+    "css-loader": "^0.24.0",
     "enzyme": "^2.3.0",
     "eslint": "^3.1.1",
     "eslint-plugin-react": "^5.2.2",
     "exports-loader": "^0.6.3",
+    "extract-text-webpack-plugin": "^1.0.1",
     "imports-loader": "^0.6.5",
     "json-loader": "^0.5.4",
     "karma": "^0.13.22",
@@ -54,9 +58,12 @@
     "karma-webpack": "^1.7.0",
     "mocha": "^2.5.3",
     "nodemon": "^1.9.1",
+    "postcss-loader": "^0.10.1",
+    "precss": "^1.4.0",
     "react-addons-test-utils": "^15.2.1",
     "redux-devtools": "^3.3.1",
     "sinon": "^1.17.4",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }

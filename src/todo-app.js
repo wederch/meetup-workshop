@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import TodoList from "./todo-list";
-import TodoForm from "./todo-form";
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import TodoList from './todo-list';
+import TodoForm from './todo-form';
+import styles from './todo-app.scss';
 
 export default class TodoApp extends React.Component {
 

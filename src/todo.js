@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './todo.scss';
 
 export default class Todo extends React.Component {
 
@@ -27,10 +28,10 @@ export default class Todo extends React.Component {
 
   render() {
     return (
-      <li data-id={this.state.id} data-done={this.state.done}>
+      <li data-id={this.state.id}>
         <input type="checkbox" checked={this.state.done} onChange={this._toggleDone}/>
-        <label className="text">{this.state.text}</label>&nbsp;
-        <label className="delete" onClick={this._handleDelete}>[x]</label>
+        <label className={styles.text} data-done={this.state.done}>{this.state.text}</label>&nbsp;
+        <label className={styles.delete} onClick={this._handleDelete}>[x]</label>
       </li>
     );
   }
