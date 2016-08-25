@@ -23,6 +23,10 @@ coverage
 #build directory
 build
 
+#generated files
+public/app.js
+public/style.css
+
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
