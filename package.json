@@ -7,8 +7,8 @@
     "build:js": "webpack",
     "postinstall" : "npm run build:js",
     "start": "node server/server.js",
-    "test": "cross-env NODE_ENV=test karma start",
-    "test:watch": "cross-env NODE_ENV=test karma start --autoWatch=true --singleRun=false",
+    "test": "cross-env BABEL_ENV=test && karma start",
+    "test:watch": "cross-env BABEL_ENV=test && karma start --autoWatch=true --singleRun=false",
     "dev": "concurrently --kill-others \"npm run watch:js\" \"npm run watch:server\"",
     "watch:js": "webpack-dev-server --port=8081 --content-base public/ --progress --colors",
     "watch:server": "nodemon --watch server/server.js"

@@ -14,7 +14,7 @@ describe('<Todo/>', ()=> {
   it('renders an open todo with a text', ()=> {
     const data = {id: 10, text: 'test todo', done: false};
     const wrapper = mount(<Todo data={data}/>);
-    expect(wrapper.find('.text').text()).to.equal(data.text);
+    expect(wrapper.find('label[data-done]').text()).to.equal(data.text);
   });
 
 });

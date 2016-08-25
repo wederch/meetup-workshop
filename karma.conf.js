@@ -22,6 +22,8 @@ module.exports = function (config) {
       module: {
         loaders: webpackConfig.module.loaders
       },
+      postcss : webpackConfig.postcss,
+      plugins : webpackConfig.plugins,
       externals: {
         'react/addons': true,
         'react/lib/ExecutionEnvironment': true,
