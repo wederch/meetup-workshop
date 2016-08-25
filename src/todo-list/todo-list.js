@@ -12,4 +12,4 @@ export default class TodoList extends React.Component {
       <ul className={styles.list}>{todoNodes}</ul>
     );
   }
-};
+}

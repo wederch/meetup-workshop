@@ -31,7 +31,7 @@ export default class TodoApp extends React.Component {
       },
       body: JSON.stringify(todo)
     });
-  }
+  };
 
   _updateTodo = (todo) => {
     fetch(this.props.url + todo.id, {
@@ -42,11 +42,11 @@ export default class TodoApp extends React.Component {
       },
       body: JSON.stringify(todo)
     });
-  }
+  };
 
   _deleteTodo = (id) => {
     fetch(this.props.url + id, {method: 'DELETE'});
-  }
+  };
 
   componentDidMount() {
     this.loadTodos();
@@ -56,10 +56,9 @@ export default class TodoApp extends React.Component {
   render() {
     return (
       <div id='todoBox'>
-        <h1>Todos</h1>
+        <h1 className={styles.title}>Todos</h1>
         <TodoForm onSubmit={this._createTodo}/>
         <TodoList data={this.state.data} onChange={this._updateTodo} onDelete={this._deleteTodo}/>
-
       </div>
     );
   }

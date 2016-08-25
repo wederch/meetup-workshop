@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import styles from './todo.scss';
 
 export default class Todo extends React.Component {
@@ -20,11 +20,11 @@ export default class Todo extends React.Component {
     };
     this.setState(newState);
     this.props.onChange(newState);
-  }
+  };
 
   _handleDelete = ()=> {
     this.props.onDelete(this.state.id);
-  }
+  };
 
   render() {
     return (
