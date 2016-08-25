@@ -14,16 +14,6 @@
         "stage-0",
         "react",
         "airbnb"
-      ],
-      "plugins": [
-        [
-          "istanbul",
-          {
-            "exclude": [
-              "test/**/*.js"
-            ]
-          }
-        ]
       ]
     }
   }
