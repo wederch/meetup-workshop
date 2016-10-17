@@ -1,4 +1,5 @@
 # Treating your front end Code like a Professional
+## The content of this repository was migrated and will me maintained here:<br> [todo-app](https://github.com/wederch/todo-app).
 
 ### Requirements
 * [Git](https://git-scm.com/downloads)
